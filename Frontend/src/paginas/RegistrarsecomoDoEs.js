@@ -14,9 +14,9 @@ class RegistrarsecomoDoEs extends React.Component {
             <br />
             <br />
             <br />
-            <div class="boton1">
+            <div class="row">
               <center>
-                <button type="button" class="btn btn-dark">
+                <button type="button" class="btn btn-dark botones">
                   Docente
                 </button>
               </center>
@@ -24,9 +24,9 @@ class RegistrarsecomoDoEs extends React.Component {
               <br />
               <br />
               <br />
-              <div class="boton2">
+              <div class="row">
                 <center>
-                  <button type="button" class="btn btn-dark">
+                  <button type="button" class="btn btn-dark botones">
                     Estudiante
                   </button>
                 </center>
@@ -34,7 +34,7 @@ class RegistrarsecomoDoEs extends React.Component {
                 <br />
                 <br />
                 <br />
-                <div class="Boton">
+                <div class="row">
                   <center>
                     <button
                       type="button"
