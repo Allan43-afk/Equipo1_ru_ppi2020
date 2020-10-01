@@ -1,13 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
-
-
 import App from "./routers/App";
+import "bootstrap/dist/css/bootstrap.min.css";
 
-const rootElement = document.getElementById("root");
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  rootElement
-);
+import "bootstrap/dist/js/bootstrap.bundle.min";
+
+ReactDOM.render(<App />, document.getElementById("root"));
