@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/styles.css";
-
+import ImagenInicio from "../imagenes/ImagenInicio.png";
 class RegistrarsecomoDoEs extends React.Component {
   render() {
     return (
@@ -14,35 +14,43 @@ class RegistrarsecomoDoEs extends React.Component {
             <br />
             <br />
             <br />
-            <div class="row">
-              <center>
-                <button type="button" class="btn btn-dark botones">
-                  Docente
+            <div className="col">
+              <button type="button" class="btn btn-secondary btn-lg btn-block">
+                Docente
+              </button>
+
+              <br />
+              <br />
+              <br />
+              <div className="col">
+                <button
+                  type="button"
+                  className="btn btn-primary btn-lg btn-block boton51"
+                >
+                  Estudiante
                 </button>
-              </center>
 
-              <br />
-              <br />
-              <br />
-              <div class="row">
-                <center>
-                  <button type="button" class="btn btn-dark botones">
-                    Estudiante
+                <br />
+                <br />
+                <br />
+                <br />
+                <div className="col">
+                  <button
+                    type="button"
+                    className="btn btn-primary btn-lg btn-block botonvolver"
+                  >
+                    Volver
                   </button>
-                </center>
-
-                <br />
-                <br />
-                <br />
-                <div class="row">
-                  <center>
-                    <button
-                      type="button"
-                      class="btn btn-primary btn-lg btn-block"
-                    >
-                      Volver
-                    </button>
-                  </center>
+                  <br />
+                  <br />
+                  <br />
+                  <div className="col">
+                    <img
+                      src={ImagenInicio}
+                      ClassName="rounded mx-auto d-block imagenDo"
+                      alt="..."
+                    />
+                  </div>
                 </div>
               </div>
             </div>
