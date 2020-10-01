@@ -10,7 +10,7 @@ class Inicio extends React.Component {
           <div className="col-sm-4 col-md-4 col-lg-4">
             <div className="row">
               <h1>
-                <center>HOLA</center>
+                <center>MEJORAMIENTO DE LA CONVIVENCIA ESCOLAR</center>
               </h1>
             </div>
           </div>
@@ -21,14 +21,6 @@ class Inicio extends React.Component {
               alt="..."
             />
           </div>
-
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
           <br />
           <br />
           <div class="row">
