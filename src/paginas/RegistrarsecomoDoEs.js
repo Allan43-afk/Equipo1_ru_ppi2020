@@ -47,8 +47,13 @@ class RegistrarsecomoDoEs extends React.Component {
                   <div className="col">
                     <img
                       src={ImagenInicio}
-                      ClassName="rounded mx-auto d-block imagenDo"
+                      ClassName="rounded mx-auto d-block imagenInicio"
                       alt="..."
+                      width="1100"
+                      display="block"
+                      margin-
+                      t="auto"
+                      margin-right="auto"
                     />
                   </div>
                 </div>

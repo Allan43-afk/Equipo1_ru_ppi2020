@@ -49,33 +49,43 @@ class Tipodeusuario extends React.Component {
           <input type="email" class="form-control" id="inputEmail4" />
         </div>
         <div class="form-group col-md-6">
-          <label for="inputPassword4">Contraseña</label>
-          <input type="password" class="form-control" id="inputPassword4" />
-        </div>
+          <div class="form-group col-md-6 botonTipo">
+            <div class="form-group col-md-6 v">
+              <div class="form-group col-md-6 v">
+                <label for="inputPassword4">Contraseña</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="inputPassword4"
+                />
+              </div>
 
-        <div class="col">
-          <button type="button" className="botonInicio">
-            {" "}
-            <a href="./menuEstudiante">Ingresar</a>
-          </button>
-        </div>
+              <div class="col">
+                <button type="button" className="botonInicio">
+                  {" "}
+                  <a href="./menuEstudiante">Ingresar</a>
+                </button>
+              </div>
 
-        <br />
+              <br />
 
-        <div class="col">
-          <button type="button" className="botonInicio">
-            {" "}
-            <a href="./Tipodeusuario">¿Olvidaste tu contraseña?</a>
-          </button>
-        </div>
+              <div class="col">
+                <button type="button" className="botonInicio">
+                  {" "}
+                  <a href="./Tipodeusuario">¿Olvidaste tu contraseña?</a>
+                </button>
+              </div>
 
-        <br />
+              <br />
 
-        <div class="col">
-          <button type="button" className="botonInicio">
-            {" "}
-            <a href="./Tipodeusuario">¿No tienes cuenta?Crea una</a>
-          </button>
+              <div class="col">
+                <button type="button" className="botonInicio">
+                  {" "}
+                  <a href="./Tipodeusuario">¿No tienes cuenta?Crea una</a>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     );

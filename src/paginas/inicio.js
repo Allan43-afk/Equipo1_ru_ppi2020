@@ -9,27 +9,25 @@ class Inicio extends React.Component {
           <div className="col-sm-4 col-md-4 col-lg-4"></div>
           <div className="col-sm-4 col-md-4 col-lg-4 text-center">
             <h1>MEJORAMIENTO DE LA CONVIVENCIA ESCOLAR</h1>
-            <div className="row">
-              <div className="col">
-                <img
-                  src={ImagenInicio}
-                  ClassName="rounded mx-auto d-block imagenInicio"
-                  alt="..."
-                />
-              </div>
-            </div>
+            <br />
+            <br />
+            <img
+              src={ImagenInicio}
+              ClassName="rounded mx-auto d-block imagenInicio"
+              alt="..."
+              width="390"
+              display="block"
+              margin-
+              t="auto"
+              margin-right="auto"
+            />
           </div>
         </div>
         <br />
         <br />
         <br />
-        <div className="col">
-          <button
-            type="button"
-            class="btn btn-primary btn-lg btn-block boton43"
-          >
-            <a href="./Tipodeusuario">Entrar</a>
-          </button>
+        <div className="row">
+        <button type="button" class="btn btn-primary btn-lg btn-block">Entrar</button>
         </div>
       </div>
     );
