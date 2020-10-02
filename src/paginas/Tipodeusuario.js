@@ -67,7 +67,7 @@ class Tipodeusuario extends React.Component {
                   type="button"
                   className="btn btn-primary btn-lg btn-block"
                 >
-                  <a href="./Tipodeusuario">Ingresar</a>
+                  <a href="./Registrarsecomoestudiante">Ingresar</a>
                 </button>
               </div>
 

@@ -7,6 +7,8 @@ import Tipodeusuario from "../paginas/Tipodeusuario";
 import RegistrarsecomoDoEs from "../paginas/RegistrarsecomoDoEs";
 import Buzonrespuestas from "../paginas/Buzonrespuestas";
 import situacionesreportadas from "../paginas/situacionesreportadas";
+import RegistrarsecomoEstudiante from "../paginas/RegistrarsecomoEstudiante";
+
 const App = () => {
   return (
     <BrowserRouter>
@@ -20,7 +22,11 @@ const App = () => {
           path="/RegistrarsecomoDoEs"
           component={RegistrarsecomoDoEs}
         />
-          
+        <Route
+          exact
+          path="/RegistrarsecomoEstudiante"
+          component={RegistrarsecomoEstudiante}
+        />
         <Route exact path="/Buzonrespuestas" component={Buzonrespuestas} />
         <Route
           exact
