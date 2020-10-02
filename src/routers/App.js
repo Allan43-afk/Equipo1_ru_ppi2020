@@ -6,6 +6,7 @@ import MenuDocente from "../paginas/menuDocente";
 import Tipodeusuario from "../paginas/Tipodeusuario";
 import RegistrarsecomoDoEs from "../paginas/RegistrarsecomoDoEs";
 import Buzonrespuestas from "../paginas/Buzonrespuestas";
+import situacionesreportadas from "../paginas/situacionesreportadas";
 const App = () => {
   return (
     <BrowserRouter>
@@ -14,9 +15,18 @@ const App = () => {
         <Route exact path="/menuEstudiante" component={menuEstudiante} />
         <Route exact path="/menuDocente" component={MenuDocente} />
         <Route exact path="/Tipodeusuario" component={Tipodeusuario} />
-        <Route exact path="/RegistrarsecomoDoEs" component={RegistrarsecomoDoEs}/>
-        <Route exact path="/Buzonrespuestas" component={Buzonrespuestas}/>
-        
+        <Route
+          exact
+          path="/RegistrarsecomoDoEs"
+          component={RegistrarsecomoDoEs}
+        />
+          
+        <Route exact path="/Buzonrespuestas" component={Buzonrespuestas} />
+        <Route
+          exact
+          path="/situacionesreportadas"
+          component={situacionesreportadas}
+        />
       </Switch>
     </BrowserRouter>
   );

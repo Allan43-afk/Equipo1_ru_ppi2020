@@ -27,7 +27,9 @@ class Inicio extends React.Component {
         <br />
         <br />
         <div className="row">
-        <button type="button" class="btn btn-primary btn-lg btn-block">Entrar</button>
+          <button type="button" className="btn btn-primary btn-lg btn-block">
+            <a href="./Tipodeusuario">Entrar</a>
+          </button>
         </div>
       </div>
     );

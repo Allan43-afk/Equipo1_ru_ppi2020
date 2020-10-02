@@ -6,10 +6,9 @@ class Tipodeusuario extends React.Component {
   render() {
     return (
       <div className="container-fluid">
-        <div class="row">
-          <div class="col">
-            <center>
-              {" "}
+        <div className="row">
+          <div className="col lg-12">
+            <div className="col text-center">
               <img
                 src={ImagenTip}
                 className="img-fluid"
@@ -17,9 +16,10 @@ class Tipodeusuario extends React.Component {
                 width="500"
                 height="200"
               />
-            </center>
-            <div>
-              <div class="dropdown">
+              <div />
+            </div>
+            <div className="col text-center">
+              <div className="dropdown text-center">
                 <button
                   class="btn btn-secondary dropdown-toggle"
                   type="button"
@@ -30,64 +30,71 @@ class Tipodeusuario extends React.Component {
                 >
                   Tipo de Usuario
                 </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item" href="#">
+                <div
+                  className="dropdown-menu"
+                  aria-labelledby="dropdownMenuButton"
+                >
+                  <a className="dropdown-item" href="#">
                     Estudiante
                   </a>
-                  <a class="dropdown-item" href="#">
+                  <a className="dropdown-item" href="#">
                     Docente
                   </a>
-                  <div class="form-group row"></div>
+                  <div className="form-group row"></div>
                 </div>
-              </div>
             </div>
           </div>
         </div>
-
-        <div class="form-group col-md-6">
-          <label for="inputEmail4">Usuario</label>
-          <input type="email" class="form-control" id="inputEmail4" />
+        <div class="from-row formulario text-center">
+          <div className="form-group col-md-6 text-center">
+            <label for="inputEmail4">Usuario</label>
+            <input type="email" className="form-control" id="inputEmail4" />
+          </div>
         </div>
-        <div class="form-group col-md-6">
-          <div class="form-group col-md-6 botonTipo">
-            <div class="form-group col-md-6 v">
-              <div class="form-group col-md-6 v">
+        <div class="from-row formulario text-center">
+          <div className="form-group col-md-6 text-center">
+            <div className="form-group col-md-6 v">
+              <div className="form-group col-md-6 v">
                 <label for="inputPassword4">Contraseña</label>
                 <input
                   type="password"
-                  class="form-control"
+                  className="form-control"
                   id="inputPassword4"
                 />
               </div>
-
-              <div class="col">
-                <button type="button" className="botonInicio">
-                  {" "}
-                  <a href="./menuEstudiante">Ingresar</a>
+              <div className="col">
+                <button
+                  type="button"
+                  className="btn btn-primary btn-lg btn-block"
+                >
+                  <a href="./Tipodeusuario">Ingresar</a>
                 </button>
               </div>
 
               <br />
 
-              <div class="col">
-                <button type="button" className="botonInicio">
-                  {" "}
-                  <a href="./Tipodeusuario">¿Olvidaste tu contraseña?</a>
+              <div className="col">
+                <button
+                  type="button"
+                  className="btn btn-primary btn-lg btn-block"
+                >
+                  <a href="./Tipodeusuario">¿Olvidaste tu contraaseña?</a>
                 </button>
               </div>
-
               <br />
-
-              <div class="col">
-                <button type="button" className="botonInicio">
-                  {" "}
-                  <a href="./Tipodeusuario">¿No tienes cuenta?Crea una</a>
+              <div className="col">
+                <button
+                  type="button"
+                  className="btn btn-primary btn-lg btn-block"
+                >
+                  <a href="./Tipodeusuario">¿No tienes cuenta?Cree una</a>
                 </button>
               </div>
             </div>
           </div>
         </div>
       </div>
+   </div>
     );
   }
 }
