@@ -16,9 +16,7 @@ class Buzonrespuestas extends React.Component {
                 <br />
                 <h2> Gloria Lora</h2>
                 <div class="form-group">
-                  <label for="exampleFormControlSelect1">
-                    ver
-                  </label>
+                  <label for="exampleFormControlSelect1">ver</label>
                   <select class="form-control" id="exampleFormControlSelect1">
                     <option>Respuesta 1 </option>
                     <option>Respuesta 2</option>
@@ -26,13 +24,11 @@ class Buzonrespuestas extends React.Component {
                     <option>Respuesta 4 </option>
                     <option>Respuesta 5 </option>
                   </select>
-                  <br/>
+                  <br />
                 </div>
                 <h2> Martha Duque</h2>
                 <div class="form-group">
-                  <label for="exampleFormControlSelect1">
-                    ver
-                  </label>
+                  <label for="exampleFormControlSelect1">ver</label>
                   <select class="form-control" id="exampleFormControlSelect1">
                     <option>Respuesta 1 </option>
                     <option>Respuesta 2</option>
@@ -40,13 +36,11 @@ class Buzonrespuestas extends React.Component {
                     <option>Respuesta 4 </option>
                     <option>Respuesta 5 </option>
                   </select>
-                  <br/>
+                  <br />
                 </div>
                 <h2>Brahian Cano</h2>
                 <div class="form-group">
-                  <label for="exampleFormControlSelect1">
-                    ver
-                  </label>
+                  <label for="exampleFormControlSelect1">ver</label>
                   <select class="form-control" id="exampleFormControlSelect1">
                     <option>Respuesta 1 </option>
                     <option>Respuesta 2</option>
@@ -54,7 +48,7 @@ class Buzonrespuestas extends React.Component {
                     <option>Respuesta 4 </option>
                     <option>Respuesta 5 </option>
                   </select>
-                  <br/>
+                  <br />
                 </div>
                 <div className="col text-center  ">
                   <button type="button" className="btn btn-outline-dark boton">
