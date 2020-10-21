@@ -15,7 +15,10 @@ class RegistrarsecomoDoEs extends React.Component {
             <br />
             <br />
             <div className="col">
-              <button type="button" class="btn btn-secondary btn-lg btn-block">
+              <button
+                type="button"
+                className="btn btn-primary btn-lg btn-block boton51"
+              >
                 Docente
               </button>
 
@@ -39,7 +42,7 @@ class RegistrarsecomoDoEs extends React.Component {
                     type="button"
                     className="btn btn-primary btn-lg btn-block botonvolver"
                   >
-                    Volver
+                    <a href="/Tipodeusuario">Volver</a>
                   </button>
                   <br />
                   <br />

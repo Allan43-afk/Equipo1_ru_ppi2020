@@ -4,10 +4,9 @@ import "../styles/styles.css";
 class Inicio extends React.Component {
   render() {
     return (
-      <div className="container">
+      <div className="container text-center">
         <div className="row">
-          <div className="col-sm-4 col-md-4 col-lg-4"></div>
-          <div className="col-sm-4 col-md-4 col-lg-4 text-center">
+          <div className="col-sm-4 col-md-10 col-lg-4 text-center">
             <h1>MEJORAMIENTO DE LA CONVIVENCIA ESCOLAR</h1>
             <br />
             <br />
@@ -27,7 +26,10 @@ class Inicio extends React.Component {
         <br />
         <br />
         <div className="row">
-          <button type="button" className="btn btn-primary btn-lg btn-block">
+          <button
+            type="button"
+            className="btn btn-primary btn-md col-md-3 btn-block botonAnd boton1"
+          >
             <a href="./Tipodeusuario">Entrar</a>
           </button>
         </div>
