@@ -1,0 +1,83 @@
+.botonpro {
+  width: 300px;
+  height: 300;
+
+  align-items: center;
+}
+.botonInicio {
+  width: 200px;
+  color: black;
+}
+
+.botonnob {
+  width: 300px;
+  height: 300;
+
+  align-items: center;
+}
+.botonInicio {
+  width: 200px;
+  color: black;
+}
+
+.boton2 {
+  margin-left: 5px;
+  margin-top: 5px;
+  width: 400px;
+  background-color: gray;
+}
+
+.boton43 {
+  width: 180px;
+}
+.formulario {
+  margin-top: 10px;
+  margin-left: 200px;
+  width: 1050px;
+}
+.botonvolver {
+  background-color: #ffff;
+}
+.boton51 {
+  width: 400px;
+  margin-left: 5px;
+  margin-top: 90px;
+  background-color: gray;
+}
+.Imageninicio {
+  width: 400px;
+  margin: 50px;
+}
+.Boton1 {
+  width: 200px;
+  background-color: gray;
+}
+.Texto {
+  width: 400px;
+  margin-left: 8px;
+}
+.Boton10 {
+  width: 200px;
+  margin-top: 110px;
+  background-color: gray;
+}
+.Boton11 {
+  width: 200px;
+  margin-top: 30px;
+  background-color: gray;
+}
+.boton50 {
+  width: 400px;
+  margin-left: 5px;
+  margin-top: 54px;
+  background-color: gray;
+}
+.Boton12 {
+  width: 200px;
+  margin-top: 86px;
+  background-color: gray;
+}
+.Texto2 {
+  width: 400px;
+  margin-left: 5px;
+}
