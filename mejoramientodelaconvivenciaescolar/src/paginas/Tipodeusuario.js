@@ -24,37 +24,23 @@ class Tipodeusuario extends React.Component {
             </select>
           </div>
         </div>
-        <div class="d-flex justify-content-center ">
-          <div class="form-row">
-            <div class="form-group col-md-4">
-              <label for="inputEmail4">Usuario</label>
-              <input
-                type="email"
-                class="form-control Texto2"
-                id="inputEmail4"
-              />
-            </div>
-          </div>
+        
+        <div class="container text-center-flex justify-content-center texte-center">
+          <div class="form-group d-flex justify-content-center flex-column text-center">
+            <label for="exampleInputEmail1">Usuario</label>
+            <input type="email" class="form-control col-md-4 col-center" nameid="exampleInputEmail1" aria-describedby="emailHelp" />
+          <label for="exampleInputPassword1">Contraseña</label>
+          <input type="password" class="form-control col-md-4 col-center" id="exampleInputPassword1" />
+       
         </div>
-        <div class="d-flex justify-content-center">
-          <div class="form-row">
-            <div class="form-group col-md-4">
-              <label for="inputPassword4">Contraseña:</label>
-              <input
-                type="password"
-                class="form-control Texto2"
-                id="inputPassword4"
-              />
-            </div>
-          </div>
         </div>
         <div class="d-flex justify-content-center">
           <div class="d-flex justify-content-center">
             <button
               type="button"
-              class="btn btn-primary btn-outline-dark boton2"
+              class="btn btn-secondary btn-outline-dark boton2"
             >
-              <a href="./menuDocente">Ingresar</a>{" "}
+              <a class="text-white" href="./menuDocente">Ingresar</a>{" "}
             </button>
           </div>
         </div>
@@ -62,9 +48,9 @@ class Tipodeusuario extends React.Component {
           <div class="d-flex justify-content-center">
             <button
               type="button"
-              class="btn btn-primary btn-outline-dark boton2"
+              class="btn btn-secondary btn-outline-dark boton2"
             >
-              <a href="./Olvidastetucontraseña">¿Olvidaste tu contraseña?</a>{" "}
+              <a class="text-white" href="./Olvidastetucontraseña">¿Olvidaste tu contraseña?</a>{" "}
             </button>
           </div>
         </div>
@@ -72,9 +58,9 @@ class Tipodeusuario extends React.Component {
           <div class="d-flex justify-content-center">
             <button
               type="button"
-              class="btn btn-primary btn-outline-dark boton2"
+              class="btn btn-secondary btn-outline-dark boton2"
             >
-              <a href="./RegistrarsecomoDoEs">¿No tienes cuenta? Cree una</a>{" "}
+              <a class="text-white" href="./RegistrarsecomoDoEs">¿No tienes cuenta? Cree una</a>{" "}
             </button>
           </div>
         </div>
