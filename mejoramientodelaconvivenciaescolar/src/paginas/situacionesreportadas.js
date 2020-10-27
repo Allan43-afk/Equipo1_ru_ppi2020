@@ -43,7 +43,7 @@ class situacionesreportadas extends React.Component {
                 </div>
                 <div className="col text-center  ">
                   <button type="button" className="btn btn-outline-dark boton">
-                    <a href="/menuDocente">Volver</a>
+                    <a  href="/menuDocente">Volver</a>
                   </button>
                   <br />
                   <br />

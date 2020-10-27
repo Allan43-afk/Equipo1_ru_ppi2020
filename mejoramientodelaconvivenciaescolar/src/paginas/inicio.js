@@ -25,7 +25,7 @@ class Inicio extends React.Component {
         <br />
 
         <div class="d-flex justify-content-center">
-          <button type="button" class="btn btn-primary btn-outline-dark Boton1">
+          <button type="button" class="btn btn-secondary btn-outline-dark Boton1">
             <a class="text-white" href="./Tipodeusuario">Entrar</a>{" "}
           </button>
         </div>

@@ -16,18 +16,18 @@ class MenuDocente extends React.Component {
         <div class="d-flex justify-content-center">
           <button
             type="button"
-            class="btn btn-primary btn-lg btn-outline-dark boton51"
+            class="btn btn-secondary btn-lg btn-outline-dark boton51"
           >
-            <a href="./situacionesreportadas">Situaciones reportadas</a>{" "}
+            <a class="text-white" href="./situacionesreportadas">Situaciones reportadas</a>{" "}
           </button>
         </div>
         <div class="d-flex justify-content-center">
           <div class="d-flex justify-content-center">
             <button
               type="button"
-              class="btn btn-primary btn-outline-dark Boton12"
+              class="btn btn-secondary btn-outline-dark Boton12"
             >
-              <a href="./Tipodeusuario">Volver</a>{" "}
+              <a class="text-white" href="./Tipodeusuario">Volver</a>{" "}
             </button>
           </div>
         </div>

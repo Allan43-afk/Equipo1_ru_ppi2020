@@ -13,9 +13,9 @@ class RegistrarsecomoDoEs extends React.Component {
           <div class="d-flex justify-content-center">
             <button
               type="button"
-              class="btn btn-primary btn-outline-dark btn-lg boton51"
+              class="btn btn-secondary btn-outline-dark btn-lg boton51"
             >
-              <a href="./RegistrarsecomoDocente">Docente</a>{" "}
+              <a class="text-white"  href="./RegistrarsecomoDocente">Docente</a>{" "}
             </button>
           </div>
         </div>
@@ -23,9 +23,9 @@ class RegistrarsecomoDoEs extends React.Component {
           <div class="d-flex justify-content-center">
             <button
               type="button"
-              class="btn btn-primary btn-lg btn-outline-dark boton51"
+              class="btn btn-secondary btn-lg btn-outline-dark boton51"
             >
-              <a href="./RegistrarsecomoEstudiante">Estudiante</a>{" "}
+              <a class="text-white"  href="./RegistrarsecomoEstudiante">Estudiante</a>{" "}
             </button>
           </div>
         </div>
@@ -33,9 +33,9 @@ class RegistrarsecomoDoEs extends React.Component {
           <div class="d-flex justify-content-center">
             <button
               type="button"
-              class="btn btn-primary btn-outline-dark Boton10"
+              class="btn btn-secondary btn-outline-dark Boton10"
             >
-              <a href="./Tipodeusuario">Volver</a>{" "}
+              <a class="text-white"  href="./Tipodeusuario">Volver</a>{" "}
             </button>
           </div>
         </div>

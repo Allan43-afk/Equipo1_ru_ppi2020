@@ -9,6 +9,7 @@ import Buzonrespuestas from "../paginas/Buzonrespuestas";
 import situacionesreportadas from "../paginas/situacionesreportadas";
 import RegistrarsecomoEstudiante from "../paginas/RegistrarsecomoEstudiante";
 import Registrodesituacion from "../paginas/Registrodesituacion";
+import RegistrarsecomoDocente from "../paginas/RegistrarsecomoDocente";
 const App = () => {
   return (
     <BrowserRouter>
@@ -35,6 +36,11 @@ const App = () => {
         />
         <Route exact path="/registrodesituacion" component={Registrodesituacion} />
       </Switch>
+      <Route
+          exact
+          path="/RegistrarsecomoDocente"
+          component={RegistrarsecomoDocente}
+        />
     </BrowserRouter>
   );
 };
