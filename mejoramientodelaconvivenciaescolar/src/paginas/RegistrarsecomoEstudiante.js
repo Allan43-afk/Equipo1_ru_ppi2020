@@ -5,48 +5,113 @@ import "../styles/styles.css";
 class RegistrarsecomoEstudiante extends React.Component {
   render() {
     return (
-      <div className="container-fluid ">
-        <div className="row">
-          <div className="col-sm-4 col-md-4 col-lg-4">
-            <div className="col-lg-12">
-              <div className="row">
-                <div className="col text-center">
-                  <br />
-                  <h1> Menu principal</h1>
-                  <br />
-                  <br />
-                </div>
-              </div>
-
-              <div className="container-fluid ">
-                <div className="col text-center ">
-                  <button type="button" className="btn btn-outline-dark boton">
-                    <a href="/Registrosituacion">Registrosituacion</a>
-                  </button>
-                </div>
-              </div>
-           
-
-          <div className="container-fluid ">
-            <div className="col text-center ">
-              <button type="button" className="btn btn-outline-dark boton">
-                <a href="/Buzonrespuestas">Buzon de respuestas</a>
-                <br />
-              </button>
+      <div>
+        <div>
+          <div>
+            <br />
+            <div class="d-flex justify-content-center text-center">
+              <h2>Estudiante</h2>
             </div>
-         
-        <div className="container-fluid ">
-          <div className="col text-center ">
-            <button type="button" className="btn btn-outline-dark boton">
-              <a href="/Tiposdeusuario">Volver</a>
-            </button>
           </div>
         </div>
-      </div>
-      </div>
-          </div>
+        <div class="container">
+          <div class="form-group d-flex justify-content-center">
+            <label>#Identificacion:</label>
+            <input class="form-control form-control-sm col-md-4" type="text" placeholder=""></input>
           </div>
         </div>
+        <div class="container">
+          <div class="form-group d-flex justify-content-center">
+            <label>Nombre:</label>
+            <input class="form-control form-control-sm col-md-4" type="text" placeholder=""></input>
+          </div>
+        </div>
+        <div class="container">
+          <div class="form-group d-flex justify-content-center">
+            <label>Apellido:</label>
+            <input class="form-control form-control-sm col-md-4" type="text" placeholder=""></input>
+          </div>
+        </div>
+        <div class="container">
+          <div class="form-group d-flex justify-content-center">
+            <label>Direccion:</label>
+            <input class="form-control form-control-sm col-md-4" type="text" placeholder=""></input>
+          </div>
+        </div>
+        <div class="container">
+          <div class="form-group d-flex justify-content-center">
+            <label>Grado:</label>
+            <input class="form-control form-control-sm col-md-4" type="text" placeholder=""></input>
+          </div>
+        </div>
+        <div class="container">
+          <div class="form-group d-flex justify-content-center">
+            <label>Genero:</label>
+            <select class="form-control form-control-sm col-md-4">
+              <option></option>
+              <option>Masculino</option>
+              <option>Femenino</option>
+            </select>
+          </div>
+        </div>
+        <div class="container">
+          <div class="form-group d-flex justify-content-center">
+            <label>Correo electronico:</label>
+            <input class="form-control form-control-sm col-md-4" type="text" placeholder=""></input>
+          </div>
+        </div>
+        <div class="container">
+          <div class="form-group d-flex justify-content-center">
+            <label>Fecha de  nacimiento:</label>
+            <input class="form-control form-control-sm col-md-4" type="text" placeholder=""></input>
+          </div>
+        </div>
+        <div class="container">
+          <div class="form-group d-flex justify-content-center">
+            <label>Nombre del acudiente:</label>
+            <input class="form-control form-control-sm col-md-4" type="text" placeholder=""></input>
+          </div>
+        </div>
+        <div class="container">
+          <div class="form-group d-flex justify-content-center">
+            <label>Telefono del acudiente:</label>
+            <input class="form-control form-control-sm col-md-4" type="text" placeholder=""></input>
+          </div>
+        </div>
+        <div class="container">
+          <div class="form-group d-flex justify-content-center">
+            <label>Telefono del acudiente:</label>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"></input>
+              <label class="form-check-label" for="inlineRadio1">Si</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"></input>
+              <label class="form-check-label" for="inlineRadio2">No</label>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center">
+          <form>
+            <div class="row">
+              <div class="col">
+              <div class="d-flex justify-content-center">
+          <button type="button" class="btn btn-secondary btn-outline-dark Boton1">
+            <a class="text-white" href="./Tipodeusuario">Registrarse</a>{" "}
+          </button>
+        </div>
+              </div>
+              <div class="col">
+              <div class="d-flex justify-content-center">
+          <button type="button" class="btn btn-secondary btn-outline-dark Boton1">
+            <a class="text-white" href="./RegistrarsecomoDoEs">Volver</a>{" "}
+          </button>
+        </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
     );
   }
 }
