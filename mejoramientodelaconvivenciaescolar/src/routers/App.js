@@ -10,6 +10,7 @@ import situacionesreportadas from "../paginas/situacionesreportadas";
 import RegistrarsecomoEstudiante from "../paginas/RegistrarsecomoEstudiante";
 import Registrodesituacion from "../paginas/Registrodesituacion";
 import RegistrarsecomoDocente from "../paginas/RegistrarsecomoDocente";
+import Olvidastetucontraseña from "../paginas/Olvidastetucontraseña";
 const App = () => {
   return (
     <BrowserRouter>
@@ -34,6 +35,7 @@ const App = () => {
           path="/situacionesreportadas"
           component={situacionesreportadas}
         />
+        <Route exact path="/Olvidastetucontraseña" component={Olvidastetucontraseña} />
         <Route exact path="/registrodesituacion" component={Registrodesituacion} />
       </Switch>
       <Route

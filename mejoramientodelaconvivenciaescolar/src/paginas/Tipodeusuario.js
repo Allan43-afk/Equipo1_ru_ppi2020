@@ -24,15 +24,15 @@ class Tipodeusuario extends React.Component {
             </select>
           </div>
         </div>
-        <div class="container">
-          <div class="form-group d-flex justify-content-center flex-column">
+        <div class="container text-center-flex justify-content-center texte-center">
+          <div class="form-group d-flex justify-content-center flex-column text-center">
             <label for="exampleInputEmail1">Usuario</label>
-            <input type="email" class="form-control col-md-4" nameid="exampleInputEmail1" aria-describedby="emailHelp" />          </div>
-          <div class="form-group">
-            <label for="exampleInputPassword1">Contraseña</label>
-            <input type="password" class="form-control col-md-4" id="exampleInputPassword1" />
-          </div>
+            <input type="email" class="form-control col-md-4 col-center" nameid="exampleInputEmail1" aria-describedby="emailHelp" />
+          <label for="exampleInputPassword1">Contraseña</label>
+          <input type="password" class="form-control col-md-4 col-center" id="exampleInputPassword1" />
+       
         </div>
+       
         <div class="d-flex justify-content-center">
           <div class="d-flex justify-content-center">
             <button
@@ -63,6 +63,7 @@ class Tipodeusuario extends React.Component {
             </button>
           </div>
         </div>
+      </div>
       </div>
     );
   }
