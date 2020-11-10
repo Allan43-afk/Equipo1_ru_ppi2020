@@ -52,7 +52,7 @@ class Buzonrespuestas extends React.Component {
                 </div>
                 <div className="col text-center  ">
                   <button type="button" className="btn btn-outline-dark boton">
-                    <a href="/RegistrarsecomoEstudiante">Volver</a>
+                    <a href="/menuEstudiante">Volver</a>
                   </button>
                   <br />
                   <br />

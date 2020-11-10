@@ -26,7 +26,7 @@ class olvidastetucontraseña extends React.Component {
 
                 <div class="d-flex justify-content-center">
                     <button type="button" class="btn btn-secondary btn-outline-dark Boton16">
-                        <a class="text-white" href="./Tipodeusuario">Entrar</a>{" "}
+                        <a class="text-white" href="./Tipodeusuario">Enviar</a>{" "}
                     </button>
                 </div>
             </div>
