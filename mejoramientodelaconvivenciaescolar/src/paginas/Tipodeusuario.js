@@ -24,47 +24,48 @@ class Tipodeusuario extends React.Component {
             </select>
           </div>
         </div>
-        <div class="container text-center-flex justify-content-center texte-center">
-          <div class="form-group d-flex justify-content-center flex-column text-center">
+        <div class="d-flex justify-content-center">
+          <div class="form-group col-md-4 Texto">
             <label for="exampleInputEmail1">Usuario</label>
             <input type="email" class="form-control col-md-4 col-center" nameid="exampleInputEmail1" aria-describedby="emailHelp" />
-          <label for="exampleInputPassword1">Contraseña</label>
-          <input type="password" class="form-control col-md-4 col-center" id="exampleInputPassword1" />
-       
-        </div>
-       
-        <div class="d-flex justify-content-center">
+            <label for="exampleInputPassword1">Contraseña</label>
+            <input type="password" class="form-control col-md-4 col-center" id="exampleInputPassword1" />
+
+          </div>
+          </div>
+
           <div class="d-flex justify-content-center">
-            <button
-              type="button"
-              class="btn btn-secondary btn-outline-dark boton2"
-            >
-              <a class="text-white" href="./menuDocente">Ingresar</a>{" "}
-            </button>
+            <div class="d-flex justify-content-center">
+              <button
+                type="button"
+                class="btn btn-secondary btn-outline-dark boton2"
+              >
+                <a class="text-white" href="./menuDocente">Ingresar</a>{" "}
+              </button>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center">
+            <div class="d-flex justify-content-center">
+              <button
+                type="button"
+                class="btn btn-secondary btn-outline-dark boton2"
+              >
+                <a class="text-white" href="./Olvidastetucontraseña">¿Olvidaste tu contraseña?</a>{" "}
+              </button>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center">
+            <div class="d-flex justify-content-center">
+              <button
+                type="button"
+                class="btn btn-secondary btn-outline-dark boton2"
+              >
+                <a class="text-white" href="./RegistrarsecomoDoEs">¿No tienes cuenta? Cree una</a>{" "}
+              </button>
+            </div>
           </div>
         </div>
-        <div class="d-flex justify-content-center">
-          <div class="d-flex justify-content-center">
-            <button
-              type="button"
-              class="btn btn-secondary btn-outline-dark boton2"
-            >
-              <a class="text-white" href="./Olvidastetucontraseña">¿Olvidaste tu contraseña?</a>{" "}
-            </button>
-          </div>
-        </div>
-        <div class="d-flex justify-content-center">
-          <div class="d-flex justify-content-center">
-            <button
-              type="button"
-              class="btn btn-secondary btn-outline-dark boton2"
-            >
-              <a class="text-white" href="./RegistrarsecomoDoEs">¿No tienes cuenta? Cree una</a>{" "}
-            </button>
-          </div>
-        </div>
-      </div>
-      </div>
+      
     );
   }
 }
