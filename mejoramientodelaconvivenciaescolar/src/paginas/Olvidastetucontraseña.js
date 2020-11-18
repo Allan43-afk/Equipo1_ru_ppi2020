@@ -14,15 +14,15 @@ class olvidastetucontraseña extends React.Component {
                 <br />
                 <div class="d-flex justify-content-center col-md-11 text-center">
                     <h5>
-                        ¿Como recuperar tu contraseña?
+                        ¿Cómo recuperar tu contraseña?
           </h5>
                 </div>
                 <div class="d-flex justify-content-center ">
                     <div class=" form-group col-md-4 text-center " >
 
                         <p aling="left" >
-                            Escribe una direccion de correo electronico que se
-                            diferente a la que tratas de recuperar o telefono
+                            Escribe una dirección de correo electrónico que sea
+                            diferente a la que tratas de recuperar o teléfono
                             celular registrado anteriormente</p>
                         <br />
                         <br />

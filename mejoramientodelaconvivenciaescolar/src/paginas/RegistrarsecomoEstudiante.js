@@ -16,7 +16,7 @@ class RegistrarsecomoEstudiante extends React.Component {
         </div>
         <div class="container">
           <div class="form-group d-flex justify-content-center">
-            <label>#Identificacion:</label>
+            <label>#Identificación:</label>
             <input class="form-control form-control-sm col-md-4" type="text" placeholder=""></input>
           </div>
         </div>
@@ -34,7 +34,7 @@ class RegistrarsecomoEstudiante extends React.Component {
         </div>
         <div class="container">
           <div class="form-group d-flex justify-content-center">
-            <label>Direccion:</label>
+            <label>Dirección:</label>
             <input class="form-control form-control-sm col-md-4" type="text" placeholder=""></input>
           </div>
         </div>
@@ -46,7 +46,7 @@ class RegistrarsecomoEstudiante extends React.Component {
         </div>
         <div class="container">
           <div class="form-group d-flex justify-content-center">
-            <label>Genero:</label>
+            <label>Género:</label>
             <select class="form-control form-control-sm col-md-4">
               <option></option>
               <option>Masculino</option>
@@ -56,7 +56,7 @@ class RegistrarsecomoEstudiante extends React.Component {
         </div>
         <div class="container">
           <div class="form-group d-flex justify-content-center">
-            <label>Correo electronico:</label>
+            <label>Correo electrónico:</label>
             <input class="form-control form-control-sm col-md-4" type="text" placeholder=""></input>
           </div>
         </div>
@@ -74,13 +74,13 @@ class RegistrarsecomoEstudiante extends React.Component {
         </div>
         <div class="container">
           <div class="form-group d-flex justify-content-center">
-            <label>Telefono del acudiente:</label>
+            <label>Teléfono del acudiente:</label>
             <input class="form-control form-control-sm col-md-4" type="text" placeholder=""></input>
           </div>
         </div>
         <div class="container">
           <div class="form-group d-flex justify-content-center">
-            <label>Telefono del acudiente:</label>
+            <label>Teléfono del acudiente:</label>
             <div class="form-check form-check-inline">
               <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"></input>
               <label class="form-check-label" for="inlineRadio1">Si</label>

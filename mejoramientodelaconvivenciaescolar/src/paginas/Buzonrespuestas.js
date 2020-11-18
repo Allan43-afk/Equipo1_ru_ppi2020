@@ -12,7 +12,7 @@ class Buzonrespuestas extends React.Component {
               <div className="col-lg-12">
                 <br />
                 <br />
-                <h2> Buzon de respuestas</h2>
+                <h2> Buzón de respuestas</h2>
                 <br />
                 <h3> Gloria Lora</h3>
                 <div class="form-group">
