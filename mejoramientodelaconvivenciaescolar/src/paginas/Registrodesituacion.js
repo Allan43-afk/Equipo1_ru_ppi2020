@@ -24,17 +24,17 @@ class Registrodesituacion extends React.Component {
                 <div class="form-group">
                   <br />
                   <label for="exampleFormControlSelect1">
-                    Seleccione el tipo de agresion
+                    Seleccione el tipo de agresión
                   </label>
                   <select class="form-control" id="exampleFormControlSelect1">
                     <option>Disciplinario </option>
-                    <option>Agresion</option>
+                    <option>Agresión</option>
                     <option>Bullying </option>
                     <option>Acoso </option>
                     <option>Robo </option>
                   </select>
                 </div>
-                <h4>Descripcion</h4>
+                <h4>Descripción</h4>
                 <input
                   class="form-control"
                   type="text"

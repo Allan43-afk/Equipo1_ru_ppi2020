@@ -18,7 +18,7 @@ class MenuEstudiante extends React.Component {
             type="button"
             class="btn btn-secondary btn-lg btn-outline-dark boton50"
           >
-            <a class="text-white" href="./Registrodesituacion">Registro de situacion</a>{" "}
+            <a class="text-white" href="./Registrodesituacion">Registro de situación</a>{" "}
           </button>
         </div>
         <div class="d-flex justify-content-center">
@@ -26,7 +26,7 @@ class MenuEstudiante extends React.Component {
             type="button"
             class="btn btn-secondary btn-lg btn-outline-dark boton50"
           >
-            <a class="text-white" href="./Buzonrespuestas">Buzon de respuestas</a>{" "}
+            <a class="text-white" href="./Buzonrespuestas">Buzón de respuestas</a>{" "}
           </button>
         </div>
         <div class="d-flex justify-content-center">

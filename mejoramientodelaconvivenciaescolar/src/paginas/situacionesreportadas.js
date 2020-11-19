@@ -14,12 +14,12 @@ class situacionesreportadas extends React.Component {
                 <br />
                 <h2> Situaciones reportadas:</h2>
                 <br />
-                <h3> Felipe Medina Perez</h3>
+                <h3> Felipe Medina Pérez</h3>
                 <div class="form-group">
                   <label for="exampleFormControlSelect1">ver</label>
                   <select class="form-control" id="exampleFormControlSelect1">
-                    <option>Situacion reportada 1</option>
-                    <option>Situacion reportada 2</option>
+                    <option>Situación reportada 1</option>
+                    <option>Situación reportada 2</option>
                   </select>
                   <br />
                 </div>
@@ -27,8 +27,8 @@ class situacionesreportadas extends React.Component {
                 <div class="form-group">
                   <label for="exampleFormControlSelect1">ver</label>
                   <select class="form-control" id="exampleFormControlSelect1">
-                    <option>Situacion reportada 1</option>
-                    <option>Situacion reportada 2</option>
+                    <option>Situación reportada 1</option>
+                    <option>Situación reportada 2</option>
                   </select>
                   <br />
                 </div>
@@ -36,8 +36,8 @@ class situacionesreportadas extends React.Component {
                 <div class="form-group">
                   <label for="exampleFormControlSelect1">ver</label>
                   <select class="form-control" id="exampleFormControlSelect1">
-                    <option>Situacion reportada 1</option>
-                    <option>Situacion reportada 2</option>
+                    <option>Situación reportada 1</option>
+                    <option>Situación reportada 2</option>
                   </select>
                   <br />
                 </div>
