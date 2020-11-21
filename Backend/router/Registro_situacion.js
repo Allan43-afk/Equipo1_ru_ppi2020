@@ -45,3 +45,29 @@ router.put('/Registro_situacion/consecutivo', (req, res) => {
             }
         })
 });
+//crear usuario
+router.post('/nuevo-Registro_situacion', (req, res) => {
+    const { consecutivo } = req.body;//1 Captura
+    let consecutivoArreglo = [consecutivo, tipo, descripcion, fechareportesistema, idusuario, estado, fecharevision, identificaciondocenterevision, observaciones];// Arreglo json
+    //Definir el scrip sql en una variable
+    let nuevoUsuario = 'SELECT * FROM Registro_situacion(modulo,mod) value(?,?)';
+    mysqlConnection.query(consecutivo, (err, results, fields) => {
+        //Si hay error
+        if (!err) {
+            //Verdadero
+            return console.error(err.message);
+        } else {//Si no
+            //Falso
+            res.json({ message: 'Reporte de situacion exitosa' });
+        }//Fin Si
+    })
+})//Fin guardar un usuario
+router.get('/Registro_situacion', (req, res) => {
+    mysqlConnection.query('SELECT * FROM Registro_situacion ', (err, rows, fiels) => {
+        if (!err) {
+            res.json(rows);
+        } else {
+            console.log(err);
+        }
+    });
+})// fin
