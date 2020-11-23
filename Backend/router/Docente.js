@@ -4,7 +4,7 @@ const mysqlConnection = require("../db/db");
 const router = require("./routes");
 
 
-router.get('/docente', (req, res) => {
+router.get('/Docente', (req, res) => {
     mysqlConnection.query('SELECT * FROM Docente', (err, rows, fields) => {
         //Si no hay error
         if (!err) {
