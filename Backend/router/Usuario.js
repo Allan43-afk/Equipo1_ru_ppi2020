@@ -31,7 +31,7 @@ router.get('/usuario/id',(req,res)=>{
 //actualizar
 router.put('/usuario/:id',(req,res)=>{
     const {id} = req.params; 
-    mysqlConnection.query('UPDATE Usuario ', [id, nombre,apellido, contraseña,estado, correo],(err,rows,fields)=>{
+    mysqlConnection.query('UPDATE USUARIO ', [id, nombre,apellido, contraseña,estado, correo],(err,rows,fields)=>{
         if(!err){
             res.json({status: 'Usuario actualizado'});
         }else{
@@ -57,7 +57,7 @@ router.post('/nuevousuario', (req, res) => {
     const { id, usuarioprefijo } = req.body;//1 Captura
     let usuarioArreglo = [u, usuarioprefijo];// Arreglo json
     //Definir el scrip sql en una variable
-    let nuevoUsuario = 'SELECT * FROM Usuario (modulo,mod) value(?,?)';
+    let nuevoUsuario = 'SELECT * FROM USUARIO (modulo,mod) value(?,?)';
     mysqlConnection.query(nuevoUsuario, usuarioArreglo, (err, results, fields) => {
         //Si hay error
         if (!err) {
@@ -71,7 +71,7 @@ router.post('/nuevousuario', (req, res) => {
 })//Fin guardar un usuario
 
 router.get('/usuario', (req, res) => {
-    mysqlConnection.query('SELECT * FROM U(', (err, rows, fiels) => {
+    mysqlConnection.query('SELECT * FROM USUARIO(', (err, rows, fiels) => {
         if (!err) {
             res.json(rows);
         } else {
