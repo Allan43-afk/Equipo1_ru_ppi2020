@@ -5,7 +5,7 @@ const router = require("./routes");
 
 //nffs
 router.get('/estudiante', (req, res) => {
-    mysqlConnection.query('SELECT * FROM Estudiante', (err, rows, fields) => {
+    mysqlConnection.query('SELECT * FROM ESTUDIANTE', (err, rows, fields) => {
         //Si no hay error
         if (!err) {
             //Verdadero
@@ -76,4 +76,3 @@ router.delete('/estudiantes/:identificacion', (req,res) => {
 });
 
 module.exports = router;
-
