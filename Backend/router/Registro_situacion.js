@@ -36,4 +36,42 @@ router.post('/nueva-situacion',(req,res)=>{
 
 router.patch('/actualizar/:Consecutivo', (req, res) => {
     const {decripcion, fechareporte_sistema, id_usuario, estado, fecha_revision, identificacion_docente_revision, observaciones, Tipo} = req.body;
+    const { Consecutivo } = req.params;
+
+    mysqlConnection.query(`UPDATE RegistroSituacion SET decripcion = ?, fechareporte_sistema = ?, id_usuario = ?, estado = ?, fecha_revision = ?, identificacion_docente_revision = ?, observaciones = ?, Tipo = ? WHERE Consecutivo = ?`,
+
+        [decripcion, fechareporte_sistema, id_usuario, estado, fecha_revision, identificacion_docente_revision, observaciones, Tipo, Consecutivo], (err, rows, fields) => {
+            if (!err) {
+                res.json({ status: `situacion Actualizada` });
+            } else {
+                console.log(err);
+            }
+        });
+});
+
+//bucar 
+router.get('/buscar/:Consecutivo',(req,res)=>{
+    const {Consecutivo} = req.params;
+    mysqlConnection.query('SELECT * FROM RegistroSituacion WHERE Consecutivo =?', [Consecutivo],(err,rows,fields)=>{
+        if(!err){
+            res.json(rows[0])
+        }else{
+            console.log(err);
+        }
+    })
+})
+
+//eliminar 
+router.delete('/eliminar/:Consecutivo', (req,res) => {
+    const {Consecutivo} = req.params;
+    mysqlConnection.query('DELETE FROM RegistroSituacion WHERE Consecutivo=?', [Consecutivo], (err, rows, fields) =>{
+        if(!err){
+            res.json({ status:'situacion eliminada'});
+        }else{
+            console.log(err);
+        }
+    });
+});
+
+module.exports = router;
 
