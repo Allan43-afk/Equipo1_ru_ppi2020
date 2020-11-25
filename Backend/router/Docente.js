@@ -1,10 +1,8 @@
 const express = require("express");
-const routes = express.Router();
+const router = express.Router();
 const mysqlConnection = require("../db/db");
-const router = require("./routes");
 
-
-router.get('/Docente', (req, res) => {
+router.get('/docente', (req, res) => {
     mysqlConnection.query('SELECT * FROM Docente', (err, rows, fields) => {
         //Si no hay error
         if (!err) {
@@ -17,59 +15,63 @@ router.get('/Docente', (req, res) => {
     })//Fin query
 })//Fin del get
 
-module.exports = router;
+//agregar docente nuevo
 
+router.post('/nuevo-docente',(req,res)=>{
+    const{identificacion, nombre_completo, correo_electronico, telefono_fijo, genero, ipodeadministracion}=req.body;
 
-//bucar
-router.get('/Docente/:identificacion',(req,res)=>{
-    const {identificacion} = req.params; //cedula del usuario númerico entero
-    mysqlConnection.query('SELECT * FROM Docente WHERE identificacion =?', [identificacion,nombrecompleto,correoelectronico,telefonofijo,telefonocelular,genero,tipodeadministrativo],(err,rows,fields)=>{
+    let docente = [identificacion, nombre_completo, correo_electronico, telefono_fijo, genero, ipodeadministracion];
+
+    let nuevoDocente = `INSERT INTO Docente (identificacion, nombre_completo, correo_electronico, telefono_fijo, genero, ipodeadministracion)VALUES(?,?,?,?,?,?)`;
+
+    mysqlConnection.query(nuevoDocente,docente,(err,results,fields)=>{
+        if(err){
+            return console.error(err.message);
+        }else{
+            res.json({message:`Docente registrado exitosamente`});
+        }
+    });
+});
+//actualizar
+
+router.patch('/actualizar/:identificacion', (req, res) => {
+    const {nombre_completo, correo_electronico, telefono_fijo, genero, ipodeadministracion} = req.body;
+
+    const { identificacion } = req.params;
+
+    mysqlConnection.query(`UPDATE Docente SET nombre_completo = ?, correo_electronico = ?, telefono_fijo = ?, genero = ?, ipodeadministracion = ? WHERE identificacion = ?`,
+
+        [nombre_completo, correo_electronico, telefono_fijo, genero, ipodeadministracion, identificacion], (err, rows, fields) => {
+            if (!err) {
+                res.json({ status: `docente Actualizado` });
+            } else {
+                console.log(err);
+            }
+        });
+});
+
+//bucar docente
+router.get('/buscar/:identificacion',(req,res)=>{
+    const {identificacion} = req.params;
+    mysqlConnection.query('SELECT * FROM Docente WHERE identificacion =?', [identificacion],(err,rows,fields)=>{
         if(!err){
             res.json(rows[0])
         }else{
             console.log(err);
         }
     })
-}) // fin buscar
+})
 
-//actilizar
-router.put('/Docente/identificacion', (req, res) => {
-    const { identificacion,nombrecompleto,correoelectronico,telefonofijo,telefonocelular,genero,tipodeadministrativo } = req.body;
-    const { identificacion } = req.params;
-    mysqlConnection.query(`UPDATE Docente SET identificacion =?,nombrecompleto=?,correoelectronico=?,telefonofijo=?,telefonocelular=?,genero=?,tipodeadministrativo=?, WHERE identificacion=?`,
-        [ identificacion,nombrecompleto,correoelectronico,telefonofijo,telefonocelular,genero,tipodeadministrativo], (err, rows, fields) => {
-            if (!err) {
-
-                res.json({ status: `Docente Actualizado` });
-            } else {
-                console.log(err);
-            }
-        })
-});
-//crear usuario
-router.post('/nuevo-Docente', (req, res) => {
-    const { identificacion } = req.body;//1 Captura
-    let DocenteArreglo = [identificacion,nombrecompleto,correoelectronico,telefonofijo,telefonocelular,genero,tipodeadministrativo];// Arreglo json
-    //Definir el scrip sql en una variable
-    let nuevoUsuario = 'SELECT * FROM Docente(modulo,mod) value(?,?)';
-    mysqlConnection.query(identificacion,  (err, results, fields) => {
-        //Si hay error
-        if (!err) {
-            //Verdadero
-            return console.error(err.message);
-        } else {//Si no
-            //Falso
-            res.json({ message: 'Docente creado' });
-        }//Fin Si
-    })
-})//Fin guardar un usuario
-
-router.get('/Docente', (req, res) => {
-    mysqlConnection.query('SELECT * FROM Docente', (err, rows, fiels) => {
-        if (!err) {
-            res.json(rows);
-        } else {
+//eliminar docente
+router.delete('/eliminar/:identificacion', (req,res) => {
+    const {identificacion} = req.params;
+    mysqlConnection.query('DELETE FROM Docente WHERE identificacion=?', [identificacion], (err, rows, fields) =>{
+        if(!err){
+            res.json({ status:'docente eliminado'});
+        }else{
             console.log(err);
         }
     });
-})// fin
+});
+
+module.exports = router;
