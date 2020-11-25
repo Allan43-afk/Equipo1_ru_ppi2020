@@ -1,10 +1,9 @@
-const routes = express.Router();
+const express = require("express");
+const router = express.Router();
 const mysqlConnection = require("../db/db");
-const router = require("./routes");
-
 
 router.get('/usuario', (req, res) => {
-    mysqlConnection.query('SELECT * FROM USUARIO', (err, rows, fields) => {
+    mysqlConnection.query('SELECT * FROM Usuario', (err, rows, fields) => {
         //Si no hay error
         if (!err) {
             //Verdadero
@@ -16,68 +15,63 @@ router.get('/usuario', (req, res) => {
     })//Fin query
 })//Fin del get
 
-//bucar
-router.get('/usuario/id',(req,res)=>{
-    const {id} = req.params; 
-    mysqlConnection.query('SELECT * FROM USUARIO WHERE id =?', [cedula],(err,rows,fields)=>{
+//agregar usuario nuevo
+
+router.post('/nuevo-usuario',(req,res)=>{
+    const{Identificacion, Nombre, Apellido, Contraseña, Estado, Correo}=req.body;
+
+    let usuario = [Identificacion, Nombre, Apellido, Contraseña, Estado, Correo];
+
+    let nuevoUsuario = `INSERT INTO Usuario (Identificacion, Nombre, Apellido, Contraseña, Estado, Correo)VALUES(?,?,?,?,?,?)`;
+
+    mysqlConnection.query(nuevoUsuario,usuario,(err,results,fields)=>{
+        if(err){
+            return console.error(err.message);
+        }else{
+            res.json({message:`Usuario registrado exitosamente`});
+        }
+    });
+});
+//actualizar
+
+router.patch('/actualizar/:Identificacion', (req, res) => {
+    const {Nombre, Apellido, Contraseña, Estado, Correo} = req.body;
+
+    const { Identificacion } = req.params;
+
+    mysqlConnection.query(`UPDATE Usuario SET Nombre = ?, Apellido = ?, Contraseña = ?, Estado = ?, Correo = ? WHERE Identificacion = ?`,
+
+        [Nombre, Apellido, Contraseña, Estado, Correo, Identificacion], (err, rows, fields) => {
+            if (!err) {
+                res.json({ status: `Usuario Actualizado` });
+            } else {
+                console.log(err);
+            }
+        });
+});
+
+//bucar Usuario
+router.get('/buscar/:Identificacion',(req,res)=>{
+    const {Identificacion} = req.params;
+    mysqlConnection.query('SELECT * FROM Usuario WHERE Identificacion =?', [Identificacion],(err,rows,fields)=>{
         if(!err){
             res.json(rows[0])
         }else{
             console.log(err);
         }
     })
-}) // fin buscar
+})
 
-//actualizar
-router.put('/usuario/:id',(req,res)=>{
-    const {id} = req.params; 
-    mysqlConnection.query('UPDATE USUARIO ', [id, nombre,apellido, contraseña,estado, correo],(err,rows,fields)=>{
+//eliminar Usuario
+router.delete('/eliminar/:Identificacion', (req,res) => {
+    const {Identificacion} = req.params;
+    mysqlConnection.query('DELETE FROM Usuario WHERE Identificacion=?', [Identificacion], (err, rows, fields) =>{
         if(!err){
-            res.json({status: 'Usuario actualizado'});
+            res.json({ status:'usuario eliminado'});
         }else{
-            console.log(err);
-        }
-    })
-})//fin actualizar
-
-//eliminar
-router.delete('/usuario/:id',(req,res)=>{
-    const {id} = req.params; 
-    mysqlConnection.query('DELETE * FROM USUARIO WHERE id = ?', [id],(err,rows,fields)=>{
-        if(!err){
-            res.json({status: 'Usuario eliminado'});
-        }else{
-            console.log(err);
-        }
-    })
-})//fin eliminar
-
-//crear usuario
-router.post('/nuevousuario', (req, res) => {
-    const { id, usuarioprefijo } = req.body;//1 Captura
-    let usuarioArreglo = [u, usuarioprefijo];// Arreglo json
-    //Definir el scrip sql en una variable
-    let nuevoUsuario = 'SELECT * FROM USUARIO (modulo,mod) value(?,?)';
-    mysqlConnection.query(nuevoUsuario, usuarioArreglo, (err, results, fields) => {
-        //Si hay error
-        if (!err) {
-            //Verdadero
-            return console.error(err.message);
-        } else {//Si no
-            //Falso
-            res.json({ message: 'usuario creado' });
-        }//Fin Si
-    })
-})//Fin guardar un usuario
-
-router.get('/usuario', (req, res) => {
-    mysqlConnection.query('SELECT * FROM USUARIO(', (err, rows, fiels) => {
-        if (!err) {
-            res.json(rows);
-        } else {
             console.log(err);
         }
     });
-})// fin
+});
 
 module.exports = router;
