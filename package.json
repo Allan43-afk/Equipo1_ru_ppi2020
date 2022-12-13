@@ -9,7 +9,7 @@
   "main": "Frontend/src/index.js",
   "dependencies": {
     "bootstrap": "4.5.2",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "jquery": "3.5.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
